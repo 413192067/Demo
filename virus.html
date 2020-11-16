@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Supplemental assignment 2</title>
+    <style>
+      h1 {
+        float: left;
+        font-size: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 onclick="change_emotion (1)">Click me！！！Baby</h1>
+    
+    <br style="clear: both;" />
+    <img id="girl" src="https://od.lk/s/NjJfMTk1MTA0NzZf/default1.png" alt="default" />
+
+    <script>
+      function change_emotion(mood) {
+        //alert("Mood number: " + mood);
+        while (mood == 1) {
+            alert("你最美😁");
+
+
+        }
+        if (mood == 2) {
+          var current_image = document.getElementById("girl");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0Nzlf/smiling.png";
+                         current_image.style = "width:400px;height:400px;";
+         // current_image.style.boxShadow = "0px 0px 10px red";
+        }
+        if (mood == 3) {
+          var current_image = document.getElementById("girl");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0Nzhf/tougue.png";
+                         current_image.style = "width:400px;height:400px;";
+
+        }
+            if (mood == 4) {
+          var current_image = document.getElementById("girl");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0Nzdf/furious.png";
+                         current_image.style = "width:400px;height:400px;";
+
+        }
+            if (mood == 5) {
+          var current_image = document.getElementById("girl");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0ODFf/smirking.png";
+                         current_image.style = "width:400px;height:400px;";
+
+        }
+            if (mood == 6) {
+          var current_image = document.getElementById("girl");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0ODBf/thinking.png";
+                         current_image.style = "width:400px;height:400px;";
+
+        }
+          
+          
+      }
+    </script>
+  </body>
+</html>
