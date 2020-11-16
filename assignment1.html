@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Supplemental assignment 2</title>
+    <style>
+      h1 {
+        float: left;
+        font-size: 45px;
+      }
+    </style>
+  </head>
+  <body>
+      <p style="color: red">Please wait for a few seconds after click the Picture</p>
+    
+
+      
+<p>
+          On click sample:
+      </p>
+    <img onclick="change_emotion (1)" id="girl1" src="https://od.lk/s/NjJfMTk1MTA0NzZf/default1.png" alt="default" />
+  
+      
+  <p>
+          On mouse move on sample:
+      </p>
+          <img onmouseover="change_emotion(3)" onmouseout="change_emotion(2)"id="girl2" src="https://od.lk/s/NjJfMTk1MTA0NzZf/default1.png" alt="default1" />
+
+
+    <script>
+      function change_emotion(mood) {
+        //alert("Mood number: " + mood);
+        if (mood == 2) {
+          document.getElementById("girl2").src = "https://od.lk/s/NjJfMTk1MTA0NzZf/default1.png";
+                                     current_image.style = "width:400px;height:400px;";
+
+        }
+        if (mood == 1) {
+          var current_image = document.getElementById("girl1");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0Nzlf/smiling.png";
+                         current_image.style = "width:400px;height:400px;";
+        }
+             if (mood == 3) {
+          var current_image = document.getElementById("girl2");
+          current_image.src = "https://od.lk/s/NjJfMTk1MTA0Nzlf/smiling.png";
+                         current_image.style = "width:400px;height:400px;";
+             }
+         // current_image.style.boxShadow = "0px 0px 10px red";
+     
+     
+
+        }
+          
+          
+      
+    </script>
+  </body>
+</html>
